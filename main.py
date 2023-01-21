@@ -7,7 +7,6 @@ class Student:
 		self.name = name
 		self.gladness = 0
 		self.progress = 0
-    self.money += 0
 		self.alive = True
 	def study(self):
 		self.progress += 20
