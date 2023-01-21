@@ -7,17 +7,21 @@ class Student:
 		self.name = name
 		self.gladness = 0
 		self.progress = 0
+    self.money += 0
 		self.alive = True
 	def study(self):
 		self.progress += 20
 		self.gladness -= 10
+    self.money += 10
 		print('Study time')
 	def chill(self):
 		self.gladness += 35
 		self.progress -= 8
+    self.money += 0
 		print('Chill time')
 	def sleep(self):
 		self.gladness += 4
+    self.money += 0
 		print('Sleep time')
 	def say_hello(self):
 		print('Hello!')
