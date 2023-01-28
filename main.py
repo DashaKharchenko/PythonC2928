@@ -75,12 +75,20 @@ class Pet:
 class Zoo:
 	def __init__(self, name):
 		self.name = name
-	def sell(self):
+	def sell(self, Owner):
 		print("Hi,want to buy a pet food?")
+		if Owner.money >= 10:
+			Owner.money -= 10
+			print('You have food')
+		else:
+			print(':((((')
     
 class Owner:
 	def __init__(self, name):
 		self.name = name
+		self.money = 0
+	def work(self):
+		self.money += 5
 	def training(self):
 		print("Hi,Charlie!Want to teach new commands?")
     
@@ -119,7 +127,11 @@ owner = Owner('Natasha')
 owner.training()
 
 zoo = Zoo('Zoo')
-zoo.sell()
+zoo.sell(owner)
+owner.work()
+zoo.sell(owner)
+owner.work()
+zoo.sell(owner)
 
-client = Client('Client')
-client.buying()
+# client = Client('Client')
+# client.buying()
