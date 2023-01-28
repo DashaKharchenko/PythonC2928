@@ -71,6 +71,12 @@ class Pet:
 		self.name = name
 	def play(self):
 		print("Hi,human.Let's play!")
+
+class Owner:
+	def __init__(self, name):
+		self.name = name
+	def training(self):
+		print("Hi,Charlie!Want to teach new commands?")
     
 print('Bob\'s life')
 obj1 = Student('Bob')
@@ -96,3 +102,6 @@ univer.pay_for_study(mom)
 
 pet = Pet('Charlie')
 pet.play()
+
+owner = Owner('Natasha')
+owner.training()
