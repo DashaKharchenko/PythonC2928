@@ -70,7 +70,7 @@ class Pet:
 	def __init__(self, name):
 		self.name = name
 	def play(self):
-		print("Let's play!")
+		print("Hi,human.Let's play!")
     
 print('Bob\'s life')
 obj1 = Student('Bob')
