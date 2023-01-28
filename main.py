@@ -71,14 +71,24 @@ class Pet:
 		self.name = name
 	def play(self):
 		print("Hi,human.Let's play!")
-
+    
+class Zoo:
+	def __init__(self, name):
+		self.name = name
+	def sell(self):
+		print("Hi,want to buy a pet food?")
+    
 class Owner:
 	def __init__(self, name):
 		self.name = name
 	def training(self):
 		print("Hi,Charlie!Want to teach new commands?")
-  def play_together(self, Owner):
-		print(Owner.name,Pet.name,'played together')
+    
+class Client:
+	def __init__(self, name):
+		self.name = name
+	def buying(self):
+		print("Sorry,I don't have enough money")
     
 print('Bob\'s life')
 obj1 = Student('Bob')
@@ -107,4 +117,9 @@ pet.play()
 
 owner = Owner('Natasha')
 owner.training()
-owner.play_together(owner)
+
+zoo = Zoo('Zoo')
+zoo.sell()
+
+client = Client('Client')
+client.buying()
