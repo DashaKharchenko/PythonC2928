@@ -77,6 +77,8 @@ class Owner:
 		self.name = name
 	def training(self):
 		print("Hi,Charlie!Want to teach new commands?")
+  def play_together(self, Owner):
+		print(Owner.name,Pet.name,'played together')
     
 print('Bob\'s life')
 obj1 = Student('Bob')
@@ -105,3 +107,4 @@ pet.play()
 
 owner = Owner('Natasha')
 owner.training()
+owner.play_together(owner)
