@@ -65,7 +65,13 @@ class Mother:
 		self.name = name
 	def argue(self):
 		print("I'm angry!!!")
-		
+
+class Pet:
+	def __init__(self, name):
+		self.name = name
+	def play(self):
+		print("Let's play!")
+    
 print('Bob\'s life')
 obj1 = Student('Bob')
 for i in range(365):
@@ -87,3 +93,6 @@ obj2.education(univer)
 mom = Mother('Chloe')
 mom.argue()
 univer.pay_for_study(mom)
+
+pet = Pet('Charlie')
+pet.play()
